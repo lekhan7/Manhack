@@ -1,0 +1,15 @@
+.navbar{
+   
+border: 2px solid black ;
+border-radius: 20px ; 
+text-align: center;
+align-items: start;
+align-content: start;
+}
+.head{
+    font-size: 30px;
+    background-image: linear-gradient(rgb(255, 65, 214),rgb(245, 67, 156));
+border-radius: 10px;
+
+
+}

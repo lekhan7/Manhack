@@ -1,0 +1,19 @@
+.inputs{
+    font-family: Georgia, ;
+    font-size: x-large;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+
+input:hover{
+    background-color: bisque;
+
+}
+.main{
+background-image: linear-gradient(rgb(252, 110, 176),rgb(250, 60, 101));
+}

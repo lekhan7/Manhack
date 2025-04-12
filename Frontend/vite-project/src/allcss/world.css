@@ -8,7 +8,13 @@
     padding: 10px;
 
 }
-
+Link{
+    all: unset;
+    border: 4px soild black  ;
+    border-radius: 20px ;
+    text-align: center;
+    align-items: center;
+}
 
 input:hover{
     background-color: bisque;

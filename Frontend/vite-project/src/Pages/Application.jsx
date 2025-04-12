@@ -12,7 +12,8 @@ function Application( { start, ...props }) {
     const [formData, setFormData] = useState({
         region: "",
         agegroup: "",
-        gender: ""
+        gender: "",
+        sesons:""
       });
 
       const handleInputChange = (event) => {
@@ -22,9 +23,10 @@ function Application( { start, ...props }) {
 
       const handleAddEntry = async () => {
         if (
-          !formData.region ||
-          !formData.agegroup ||
-          !formData.gender  === ""
+          !formData.region ===""
+       
+      
+          
        
         ) {
           alert("Please fill in all fields before adding.");
@@ -39,10 +41,10 @@ function Application( { start, ...props }) {
           body: JSON.stringify(formData),
           });
           if (response.ok) {
-            alert("YOUR DATA  HAVE BEEN    Added Successfully");
-            navigate("/worldmap");
+            alert("YOUR DATA  HAVE BEEN ADDED SUCCESSFULLY ADDED TO OUR DATA BASE ");
+            navigate("/home");
         } else {
-            alert("Failed to add the proposal. Please try again.");
+            alert("Failed to add the data. Please try again.");
         }
     } catch (error) {
         console.error("Error while adding entry:", error);
@@ -60,11 +62,14 @@ function Application( { start, ...props }) {
         </FloatingLabel>
 
         <FloatingLabel controlId="floatingInput" label=" AGE GROUP" className="mb-3">
-          <Form.Control name="agegroup"  onChange={handleInputChange} value={formData.agegroup} placeholder="Business Idea" />
+          <Form.Control name="agegroup" type='number' onChange={handleInputChange} value={formData.agegroup} placeholder="Business Idea" />
         </FloatingLabel>
 
         <FloatingLabel controlId="floatingInput" label="GENDER" className="mb-3">
           <Form.Control name="gender"  onChange={handleInputChange} value={formData.gender} placeholder="Business Idea" />
+        </FloatingLabel>
+        <FloatingLabel controlId="floatingInput" label="seasons" className="mb-3">
+          <Form.Control name="sesons"  onChange={handleInputChange} value={formData.sesons} placeholder="Business Idea" />
         </FloatingLabel>
      
         <Button variant="success" onClick={handleAddEntry}>ADD-DETAILS</Button>

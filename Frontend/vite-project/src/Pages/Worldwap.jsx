@@ -48,14 +48,10 @@ function Worldmap() {
       <input  className='inputs' type="text" value={center} onChange={handleCenterChange} placeholder="Center" />
       <input  className='inputs' type="number" value={zoom} onChange={handleZoomChange} placeholder="Zoom" />
       <input  className='inputs' type="text" value={size} onChange={handleSizeChange} placeholder="Size" />
-      <select  className='inputs' value={mapType} onChange={handleMapTypeChange}>
-        <option value="roadmap">Roadmap</option>
-        <option value="satellite">Satellite</option>
-        <option value="terrain">Terrain</option>
-        <option value="hybrid">Hybrid</option>
-      </select>
+    
       <button onClick={handleMarkerAdd}>Add Marker</button><br />
       <img src={mapUrl} alt="Map" style={{ width: '100%', height: '600px' }} />
+
     </div>
   );
 }

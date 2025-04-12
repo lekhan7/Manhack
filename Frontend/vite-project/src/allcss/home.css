@@ -1,15 +1,493 @@
-.navbar{
-   
-border: 2px solid black ;
-border-radius: 20px ; 
-text-align: center;
-align-items: start;
-align-content: start;
-}
-.head{
+* {
+  cursor: pointer;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+  }
+  
+  .header {
+    display: block;
+    color: white;
+    background-color: #7b7676de;
+    width: 100%;
+    height: 50px;
+  }
+  .link{
+
+    all: unset;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: 900;
+  }
+  .main-header {
+    display: flex;
+    margin-left: 25px;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .main-header li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #8b8282;
+    min-height: 48px;
+    padding: 0 20px;
+  }
+  
+  #item-1 {
+    color: #82fd51;
+    padding: 12px;
+    background-color: #000000;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+  align-items: center;
+  }
+  
+  #item-2 {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  #item-2:hover,
+  #item-4:hover {
+    color: white;
+    background-color: #6a6c6e;
+  }
+  
+  .second-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 25px;
+  }
+  
+  #item-3,
+  #item-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+    padding: 0 20px;
+  }
+  
+  #item-4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #lang-text {
+    margin-left: 5px;
+  }
+  
+  .select-region {
+    margin-left: 5px;
+    color: white;
+    border: none;
+    background-color: #e1e3e700;
+  }
+  
+  .nav-items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  .cdx{
+    font-family: 'Times New Roman';
+    font-size: xx-large;
+    font-style: normal;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    color: rgb(185, 247, 91);
+  }
+  
+
+  
+  .logo {
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: flex;
+  }
+  
+  #who {
+    color: #6a6e6f;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: -70px;
+    line-height: 1;
+    white-space: pre;
+  }
+  
+  
+  
+  #flex-navbar {
+  
+    display: flex;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(228, 52, 52);
+    list-style: none;
+ 
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .news{
+    all: unset;
+    font-family: cursive;
+    font-weight: bolder;
+    
+    font-size: 18px;
+  }
+  .hover-list {
+    padding: 18px;
+  }
+  
+  .hover-list:hover {
+    background-color: #7d8183;
+  }
+  
+  .select-col {
+    background-color: rgba(243, 238, 238, 0);
+    color: #fff;
+    border: none;
+  }
+  
+  .hero-section {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url("delivery-of-medical-supplies-to-hospital-in-gaza-april-2024.tmb-1920v.jpg");
+  }
+  
+  #img-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
-    background-image: linear-gradient(rgb(255, 65, 214),rgb(245, 67, 156));
-border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #5f60638a;
+    background-color: #5c5f63e5;
+    color: white;
+    font-weight: 700;
+    white-space: pre;
+  }
+  
+  .section-heading {
+    display: table;
+    width: 100%;
+    height: 3px;
+    padding-bottom: 10px;
+    /* margin: 30px 20px; */
+    /* border-bottom: solid 1px #274375; */
+    color: #68696c;
+    table-layout: fixed;
+  }
+  
+  #heading-text {
+    font-size: 30px;
+    font-family: "Nato Sans";
+    font-weight: 900;
+    float: left;
+    margin: 30px;
+  }
+  
+  #news-room-link {
+    float: right;
+    font-size: 30px;
+    font-family: "Nato Sans";
+    margin: 30px;
+    font-weight: 900;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  
+  hr {
+    background-color: white;
+  }
+  
+  .list-view {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .thumb {
+    flex: 1 1 calc(25% - 20px);
+    margin-top: 50px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: border 0.3s ease;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  figcaption {
 
-
-}
+    text-align: left;
+    color: #797a7c;
+  }
+  
+  #date-text {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #585a5e;
+    font-size: 14px;
+  }
+  
+  #pic-text {
+    display: flex;
+    color: #6e6f72;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    margin-left: 20px;
+    border: 2px solid white;
+  }
+  
+  #simple-text {
+    display: flex;
+    color: #7d8085;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    margin-left: 20px;
+  }
+  
+  .thumb:hover figure {
+    border: 2px solid #7b7d81;
+  }
+  
+  .h3-color {
+    color: rgb(73, 65, 65);
+  }
+  
+  .h2-color {
+    color: #636468;
+  }
+  
+  .main-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .flex-item-1 {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+  }
+  
+  .flex-childs {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    margin: 5px;
+  }
+  
+  #mainSection {
+    min-height: 700px;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    color: #00205c;
+  }
+  
+  #firstSection {
+    min-height: 500px;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #secondSection {
+    min-height: 500px;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .firstHeading {
+    width: 50%;
+    padding: 10px;
+    /* border: 1px solid black; */
+  }
+  
+  .secondHeading {
+    width: 50%;
+    padding: 10px;
+    /* border: 1px solid black; */
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
+  }
+  
+  .imageDiv {
+    width: 100%;
+    height: 60%;
+    border: 1px solid black;
+  }
+  
+  #imgDiv1 {
+    background-image: url('tobacco day.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #imgDiv2 {
+    background-image: url('food-saferty-video-thumbnail.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #imgDiv3 {
+    background-image: url('who75-hero-banner.webp');
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    background-repeat: no-repeat;
+  }
+  
+  .divText {
+    width: 100%;
+    height: 40%;
+  }
+  
+  #firstDiv {
+    height: 35%;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  #secondDiv {
+    height: 35%;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  #thirdDiv {
+    height: 50%;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  .fourthDiv {
+    height: 17%;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+  }
+  
+  .secondDivImage {
+    height: 100%;
+    width: 25%;
+    border-right: 1px solid black;
+    background-image: url('tobacco day.jpg');
+    background-size: cover;
+  }
+  
+  .secondDivText {
+    height: 90%;
+    width: 75%;
+  }
+  
+  #thirdPicture {
+    background-image: url(who1.webp);
+    background-size: cover;
+  }
+  
+  .footer1 {
+    min-height: 100px;
+    background-color: #0a0a0a;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footerSections {
+    height: 200px;
+    font-size: 18px;
+    font-weight: 100;
+    width: 25%;
+    color: rgb(60, 238, 69);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  .footerSections button {
+    height: 50px;
+    width: 200px;
+    background-color: #0a0a0a;
+    color: rgb(71, 247, 100);
+    border: 2px solid rgb(2, 2, 2);
+    margin: 15px;
+    font-weight: 900;
+  }
+  
+  .footerSections button:hover {
+    border: 2px solid white;
+  }
+  
+  .footerSection1-2 {
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 480px;
+  }
+  
+  .footer2 {
+    height: 80px;
+    background-color: #0c0c0c;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    color: rgb(108, 245, 74);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }

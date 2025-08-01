@@ -84,7 +84,7 @@ const data = [
 const AgeGroupGraph = () => {
   return (
     <>
-    <Link className='link' to="/home">HOME</Link>
+    <Link className='link' to="/">HOME</Link>
     <h1>Correlations Between Age Groups and NO Of Affected People</h1>
     <LineChart width={1000} height={600} data={data}>
       <CartesianGrid strokeDasharray="3 3" />

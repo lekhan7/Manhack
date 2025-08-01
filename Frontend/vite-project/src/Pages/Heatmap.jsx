@@ -307,7 +307,7 @@ function HealthHeatMap() {
   
     return (
       <div>
-           <Link className='link' to="/home">HOME</Link>
+           <Link className='link' to="/">HOME</Link>
         <h1>Region Health Insights</h1>
         <select value={selectedRegion} onChange={(e) => setSelectedRegion(e.target.value)}>
           <option value="All Regions">SELECT COUNTRY</option>

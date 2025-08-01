@@ -42,7 +42,7 @@ function Application( { start, ...props }) {
           });
           if (response.ok) {
             alert("YOUR DATA  HAVE BEEN ADDED SUCCESSFULLY ADDED TO OUR DATA BASE ");
-            navigate("/home");
+            navigate("/");
         } else {
             alert("Failed to add the data. Please try again.");
         }

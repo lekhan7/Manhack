@@ -30,7 +30,7 @@ function Alert() {
 
   return (
     <div> 
-        <Link className='link' to="/home">HOME</Link>
+        <Link className='link' to="/">HOME</Link>
       <h1 className='alerts'>ALERTS</h1>
       <ul>
         {states.map((state, index) => (
